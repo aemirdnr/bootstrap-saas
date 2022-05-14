@@ -1,0 +1,315 @@
+@font-face {
+  font-family: 'Gothic A1 Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Gothic A1/GothicA1-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Gothic A1 Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Gothic A1/GothicA1-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Gothic A1 Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Gothic A1/GothicA1-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Kalam Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Kalam/Kalam-Bold.woff2") format("woff2");
+}
+
+* {
+  color: #BEBEBE;
+  background-color: #101010;
+}
+
+ul {
+  list-style-type: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+body {
+  background-color: #101010;
+}
+
+/* Header */
+.sticky {
+  background-color: #101010;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  -webkit-box-shadow: 0 0px 20px #ffc918;
+          box-shadow: 0 0px 20px #ffc918;
+}
+
+.logo {
+  width: 105px;
+  height: 100px;
+}
+
+.btn-register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  cursor: pointer;
+}
+
+.btn-register i {
+  font-size: 1.6rem;
+  opacity: 65%;
+}
+
+.btn-register span {
+  font-family: 'Gothic A1 Medium';
+  font-size: 0.8rem;
+  letter-spacing: 0.035em;
+  color: #BEBEBE;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  white-space: nowrap;
+}
+
+.btn-register:hover i {
+  -webkit-transition: ease-out 150ms;
+  transition: ease-out 150ms;
+  opacity: 100%;
+}
+
+.btn-register:hover span {
+  -webkit-transition: ease-out 150ms;
+  transition: ease-out 150ms;
+  color: #FFF;
+}
+
+.btn-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  cursor: pointer;
+}
+
+.btn-login i {
+  font-size: 1.6rem;
+  opacity: 65%;
+}
+
+.btn-login span {
+  font-family: 'Gothic A1 Medium';
+  font-size: 0.8rem;
+  letter-spacing: 0.035em;
+  color: #BEBEBE;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  white-space: nowrap;
+}
+
+.btn-login:hover i {
+  -webkit-transition: ease-out 150ms;
+  transition: ease-out 150ms;
+  opacity: 100%;
+}
+
+.btn-login:hover span {
+  -webkit-transition: ease-out 150ms;
+  transition: ease-out 150ms;
+  color: #FFF;
+}
+
+.list-item a {
+  color: #BEBEBE;
+  letter-spacing: 0.03em;
+  font-family: 'Gothic A1 Light';
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
+
+.list-item a:hover {
+  color: #FFf;
+}
+
+.nav-icon {
+  width: 42px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.nav-icon .first-line {
+  display: block;
+  position: relative;
+  width: 42px;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: -webkit-transform 250ms ease-out;
+  transition: -webkit-transform 250ms ease-out;
+  transition: transform 250ms ease-out;
+  transition: transform 250ms ease-out, -webkit-transform 250ms ease-out;
+}
+
+.nav-icon .second-line {
+  display: block;
+  position: relative;
+  width: 42px;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: -webkit-transform 250ms ease-out;
+  transition: -webkit-transform 250ms ease-out;
+  transition: transform 250ms ease-out;
+  transition: transform 250ms ease-out, -webkit-transform 250ms ease-out;
+}
+
+.nav-icon .last-line {
+  display: block;
+  position: relative;
+  width: 42px;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: -webkit-transform 250ms ease-out;
+  transition: -webkit-transform 250ms ease-out;
+  transition: transform 250ms ease-out;
+  transition: transform 250ms ease-out, -webkit-transform 250ms ease-out;
+}
+
+.nav-icon .cbox {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0%;
+  width: 42px;
+  height: 22px;
+  z-index: 1;
+}
+
+.nav-icon .cbox:checked + div .first-line {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 5px;
+}
+
+.nav-icon .cbox:checked + div .second-line {
+  display: none;
+}
+
+.nav-icon .cbox:checked + div .last-line {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  bottom: 5px;
+}
+
+.mobile-nav {
+  display: none;
+  width: 100%;
+  height: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#101010), to(rgba(255, 213, 0, 0.45)));
+  background: linear-gradient(180deg, #101010 0%, rgba(255, 213, 0, 0.45) 100%);
+}
+
+.mobile-nav ul {
+  background: transparent;
+}
+
+.mobile-nav ul li {
+  background: transparent;
+}
+
+.mobile-nav ul li a {
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  font-family: "Gothic A1 Medium";
+  letter-spacing: 0.12em;
+}
+
+/* ------------------ */
+/* Login/Register */
+.modal {
+  background-color: #101010;
+}
+
+.modal-content {
+  background-color: #101010 !important;
+  -webkit-box-shadow: 0px 0px 55px rgba(255, 213, 0, 0.75);
+          box-shadow: 0px 0px 55px rgba(255, 213, 0, 0.75);
+  text-align: center;
+  font-family: "Gothic A1 Medium";
+}
+
+.modal-content h1 {
+  font-family: "Kalam Bold";
+  font-size: 36px;
+}
+
+.modal-content h1 span {
+  color: #ffc918;
+}
+
+.modal-content button {
+  padding: 22px;
+  color: #FFF;
+  border: 0;
+  border-radius: 0.25rem;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 213, 0, 0.7)), to(rgba(255, 213, 0, 0.2)));
+  background: linear-gradient(270deg, rgba(255, 213, 0, 0.7), rgba(255, 213, 0, 0.2));
+  -webkit-transition: -webkit-box-shadow 250ms ease-in-out;
+  transition: -webkit-box-shadow 250ms ease-in-out;
+  transition: box-shadow 250ms ease-in-out;
+  transition: box-shadow 250ms ease-in-out, -webkit-box-shadow 250ms ease-in-out;
+}
+
+.modal-content button:hover {
+  -webkit-box-shadow: 0 0 28px rgba(255, 213, 0, 0.4);
+          box-shadow: 0 0 28px rgba(255, 213, 0, 0.4);
+}
+
+.modal-content a {
+  color: #8d8d8d;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
+
+.modal-content a:hover {
+  color: #BEBEBE;
+}
+
+.modal-content p {
+  color: #BEBEBE;
+  font-size: 14px;
+  font-family: "Gothic A1 Light";
+}
+
+.modal-content p a {
+  color: #ffc918;
+  -webkit-transition: color 200ms ease-in;
+  transition: color 200ms ease-in;
+}
+
+.modal-content p a:hover {
+  color: #FFF;
+}
+
+.modal-input input {
+  outline: none;
+  width: 90%;
+  background-color: #090909;
+  border: 0;
+  border-radius: 0.5rem;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 12px;
+}
+/*# sourceMappingURL=style.css.map */

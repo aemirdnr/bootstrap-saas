@@ -1,0 +1,200 @@
+$bgColor: #101010
+
+$primaryColor: #ffc918
+$secondaryColor: #d3a715
+
+$textColor: #BEBEBE
+$subtextColor: #8d8d8d
+
+@font-face
+    font-family: 'Gothic A1 Light'
+    font-style: normal
+    font-weight: normal
+    src: url("../fonts/Gothic A1/GothicA1-Light.woff2") format('woff2')
+
+@font-face
+    font-family: 'Gothic A1 Medium'
+    font-style: normal
+    font-weight: normal
+    src: url("../fonts/Gothic A1/GothicA1-Medium.woff2") format('woff2')
+
+@font-face
+    font-family: 'Gothic A1 Bold'
+    font-style: normal
+    font-weight: normal
+    src: url("../fonts/Gothic A1/GothicA1-Bold.woff2") format('woff2')
+
+@font-face
+    font-family: 'Kalam Bold'
+    font-style: normal
+    font-weight: normal
+    src: url("../fonts/Kalam/Kalam-Bold.woff2") format('woff2')
+
+*
+    color: $textColor
+    background-color: $bgColor
+
+ul
+    list-style-type: none !important
+
+a
+    text-decoration: none !important
+
+body
+    background-color: $bgColor    
+
+@mixin navButton()
+    display: flex
+    align-self: center
+    cursor: pointer
+    i
+        font-size: 1.6rem
+        opacity: 65%
+    span
+        font-family: 'Gothic A1 Medium'
+        font-size: 0.8rem
+        letter-spacing: 0.035em
+        color: $textColor
+        align-self: center
+        white-space: nowrap
+    &:hover
+        i
+            transition: ease-out 150ms
+            opacity: 100%
+        span
+            transition: ease-out 150ms
+            color: #FFF
+
+@mixin navLine()
+    display: block
+    position: relative
+    width: 42px
+    height: 2px
+    background-color: #fff
+    transition: transform 250ms ease-out
+
+/* Header */
+
+.sticky
+    background-color: $bgColor
+    position: sticky
+    top: 0
+    box-shadow: 0 0px 20px $primaryColor
+
+.logo
+    width: 105px
+    height: 100px
+
+.btn-register
+    @include navButton()
+    
+.btn-login
+    @include navButton()
+
+.list-item
+    a
+        color: $textColor
+        letter-spacing: 0.03em
+        font-family: 'Gothic A1 Light'
+        transition: color 150ms ease-in-out
+        &:hover
+            color: #FFf
+
+.nav-icon
+    width: 42px
+    height: 22px
+    cursor: pointer
+    .first-line
+        @include navLine()
+    .second-line
+        @include navLine()
+    .last-line
+        @include navLine()
+    .cbox
+        position: absolute
+        cursor: pointer
+        opacity: 0%
+        width: 42px
+        height: 22px
+        z-index: 1
+        &:checked + div
+            .first-line
+                transform: rotate(45deg)
+                top: 5px
+            .second-line
+                display: none
+            .last-line
+                transform: rotate(-45deg)
+                bottom: 5px
+
+.mobile-nav
+    display: none
+    width: 100%
+    height: auto
+    
+    background: linear-gradient(180deg, rgba(16, 16, 16, 1) 0%, rgba(255, 213, 0, 0.45) 100%)
+    ul
+        background: transparent
+        li
+            background: transparent
+            a
+                cursor: pointer
+                background: transparent
+                color: #fff
+                font-family: "Gothic A1 Medium"
+                letter-spacing: 0.12em
+
+/* ------------------ */
+
+/* Login/Register */
+
+.modal
+    background-color: $bgColor
+
+.modal-content
+    background-color: $bgColor !important
+    box-shadow: 0px 0px 55px rgba(255, 213, 0, 0.75)
+
+    text-align: center
+    font-family: "Gothic A1 Medium"
+    h1
+        font-family: "Kalam Bold"
+        font-size: 36px
+        span
+            color: $primaryColor
+    button
+        padding: 22px
+        color: #FFF
+        border: 0
+        border-radius: 0.25rem
+        background: linear-gradient(270deg, rgba(255, 213, 0, 0.7), rgba(255, 213, 0, 0.2) )
+        transition: box-shadow 250ms ease-in-out
+        &:hover
+         box-shadow: 0 0 28px rgba(255, 213, 0, 0.4)
+    a
+        color: $subtextColor
+        transition: color 150ms ease-in-out
+        &:hover
+            color: $textColor
+    p
+        color: $textColor
+        font-size: 14px
+        font-family: "Gothic A1 Light"
+        a
+            color: $primaryColor
+            transition: color 200ms ease-in
+            &:hover
+                color: #FFF
+
+.modal-input
+    input
+        outline: none
+        width: 90%
+        
+        background-color: #090909
+        border: 0
+        border-radius: 0.5rem
+
+        margin-left: 16px
+        margin-right: 16px
+        padding: 12px
