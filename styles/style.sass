@@ -33,15 +33,14 @@ $subtextColor: #8d8d8d
 *
     color: $textColor
     background-color: $bgColor
+    scroll-behavior: smooth
+    scrollbar-width: none
 
 ul
     list-style-type: none !important
 
 a
-    text-decoration: none !important
-
-body
-    background-color: $bgColor    
+    text-decoration: none !important   
 
 @mixin navButton()
     display: flex
@@ -72,6 +71,13 @@ body
     height: 2px
     background-color: #fff
     transition: transform 250ms ease-out
+
+@mixin subText()
+    color: $subtextColor
+    font-family: 'Gothic A1 Medium'
+    font-size: 13px
+    line-height: 18px
+    letter-spacing: 0.05em
 
 /* Header */
 
@@ -146,6 +152,99 @@ body
 
 /* ------------------ */
 
+/* Main Section */
+
+.top-content
+    width: 100%
+    h1
+        font-family: "Kalam Bold"
+        font-size: 52px
+        letter-spacing: 0.025em
+        cursor: default
+        span
+            color: $primaryColor
+    p
+        font-family: "Gothic A1 Light"
+        color: $textColor
+        letter-spacing: 0.01em
+    a
+        transition: transform 200ms ease-in-out
+        &:hover
+            transform: scale(1.1)  
+        i
+            &:hover
+                color: $primaryColor
+
+.bottom-content
+    h6
+        font-family: 'Gothic A1 Bold'
+        letter-spacing: 0.01em
+    p
+        @include subText()
+
+    
+.mx-auto-ni
+    margin-left: auto
+    margin-right: auto
+
+@media (min-width: 768px)
+    .md-ml-auto
+        margin-left: auto
+        margin-right: 0
+
+.image-content
+    img
+        background-repeat: no-repeat
+        max-width: 60rem
+        max-height: 100rem
+        width: 100%
+        box-shadow: 0 0px 20px rgba(255, 213, 0, 0.25)
+    h6
+        font-family: 'Gothic A1 Bold'
+        letter-spacing: 0.01em
+    p
+        @include subText()
+    i
+        cursor: pointer
+        transition: transform 150ms ease-out
+        &:hover
+            transform: scale(1.2)
+
+.buy-button
+    height: fit-content
+    cursor: pointer
+    border: 0
+    background: linear-gradient(270deg, rgba(255, 213, 0, 0.85) 0%, rgba(255, 213, 0, 0.25) 97.92%)
+    border-radius: 5px
+    transition: transform 200ms ease-in-out, box-shadow 300ms ease-in-out
+    box-shadow: 0 5px 50px rgba(255, 213, 0, 0.20)
+    h6
+        font-size: 14px
+        font-family: "Gothic A1 Bold"
+        color: #FFF
+    &:hover
+        transform: scale(1.05)
+        box-shadow: 0 5px 50px rgba(255, 213, 0, 0.35)
+
+.play-button
+    cursor: pointer
+    transition: transform 200ms ease-in-out
+    i
+        transition: color 300ms ease-in-out
+        color: $secondaryColor
+    h6
+        transition: color 300ms ease-in-out
+        color: $textColor
+    &:hover
+        transform: scale(1.03)
+        i
+            color: $primaryColor
+        h6
+            color: #fff
+
+/* ---------- - */
+
+
 /* Login/Register */
 
 .modal
@@ -198,3 +297,5 @@ body
         margin-left: 16px
         margin-right: 16px
         padding: 12px
+
+/* ------------------ */

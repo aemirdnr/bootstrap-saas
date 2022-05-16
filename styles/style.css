@@ -29,6 +29,8 @@
 * {
   color: #BEBEBE;
   background-color: #101010;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 ul {
@@ -37,10 +39,6 @@ ul {
 
 a {
   text-decoration: none !important;
-}
-
-body {
-  background-color: #101010;
 }
 
 /* Header */
@@ -236,6 +234,168 @@ body {
 }
 
 /* ------------------ */
+/* Main Section */
+.top-content {
+  width: 100%;
+}
+
+.top-content h1 {
+  font-family: "Kalam Bold";
+  font-size: 52px;
+  letter-spacing: 0.025em;
+  cursor: default;
+}
+
+.top-content h1 span {
+  color: #ffc918;
+}
+
+.top-content p {
+  font-family: "Gothic A1 Light";
+  color: #BEBEBE;
+  letter-spacing: 0.01em;
+}
+
+.top-content a {
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+}
+
+.top-content a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.top-content a i:hover {
+  color: #ffc918;
+}
+
+.bottom-content h6 {
+  font-family: 'Gothic A1 Bold';
+  letter-spacing: 0.01em;
+}
+
+.bottom-content p {
+  color: #8d8d8d;
+  font-family: 'Gothic A1 Medium';
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+}
+
+.mx-auto-ni {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .md-ml-auto {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.image-content img {
+  background-repeat: no-repeat;
+  max-width: 60rem;
+  max-height: 100rem;
+  width: 100%;
+  -webkit-box-shadow: 0 0px 20px rgba(255, 213, 0, 0.25);
+          box-shadow: 0 0px 20px rgba(255, 213, 0, 0.25);
+}
+
+.image-content h6 {
+  font-family: 'Gothic A1 Bold';
+  letter-spacing: 0.01em;
+}
+
+.image-content p {
+  color: #8d8d8d;
+  font-family: 'Gothic A1 Medium';
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+}
+
+.image-content i {
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 150ms ease-out;
+  transition: -webkit-transform 150ms ease-out;
+  transition: transform 150ms ease-out;
+  transition: transform 150ms ease-out, -webkit-transform 150ms ease-out;
+}
+
+.image-content i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.buy-button {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  cursor: pointer;
+  border: 0;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 213, 0, 0.85)), color-stop(97.92%, rgba(255, 213, 0, 0.25)));
+  background: linear-gradient(270deg, rgba(255, 213, 0, 0.85) 0%, rgba(255, 213, 0, 0.25) 97.92%);
+  border-radius: 5px;
+  -webkit-transition: -webkit-transform 200ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: transform 200ms ease-in-out, box-shadow 300ms ease-in-out;
+  transition: transform 200ms ease-in-out, box-shadow 300ms ease-in-out, -webkit-transform 200ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  -webkit-box-shadow: 0 5px 50px rgba(255, 213, 0, 0.2);
+          box-shadow: 0 5px 50px rgba(255, 213, 0, 0.2);
+}
+
+.buy-button h6 {
+  font-size: 14px;
+  font-family: "Gothic A1 Bold";
+  color: #FFF;
+}
+
+.buy-button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 5px 50px rgba(255, 213, 0, 0.35);
+          box-shadow: 0 5px 50px rgba(255, 213, 0, 0.35);
+}
+
+.play-button {
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+}
+
+.play-button i {
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+  color: #d3a715;
+}
+
+.play-button h6 {
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+  color: #BEBEBE;
+}
+
+.play-button:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.play-button:hover i {
+  color: #ffc918;
+}
+
+.play-button:hover h6 {
+  color: #fff;
+}
+
+/* ---------- - */
 /* Login/Register */
 .modal {
   background-color: #101010;
@@ -312,4 +472,6 @@ body {
   margin-right: 16px;
   padding: 12px;
 }
+
+/* ------------------ */
 /*# sourceMappingURL=style.css.map */
