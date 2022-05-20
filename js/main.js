@@ -1,3 +1,8 @@
+ // Website Start
+$(window).on('load', function(){  
+    $('#loading-screen').fadeOut("slow");
+})
+
 //Mobile Navigation Fade Animation
 $('#nav-button').click(function(){
     $('#m-nav').fadeToggle("3000");
