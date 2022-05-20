@@ -84,8 +84,8 @@ a
 .sticky
     background-color: $bgColor
     position: sticky
+    z-index: 100
     top: 0
-    box-shadow: 0 0px 20px $primaryColor
 
 .logo
     width: 105px
@@ -244,6 +244,54 @@ a
 
 /* ---------- - */
 
+/* Prices Section */
+
+.headline
+    font-family: "Kalam Bold"
+    text-shadow: 2px 2px 6px $primaryColor
+    strong
+        color: $primaryColor
+
+.pricing-card
+    border-radius: 0.25rem
+    box-shadow: 0 10px 20px rgba(255, 213, 0, 0.20)
+    border: 2px solid rgba(255, 213, 0, 0.20)
+    transition: 200ms ease-in
+
+    font-family: "Gothic A1 Bold"
+    .secondary-color
+        color: $secondaryColor
+        font-family: "Gothic A1 Medium"
+        font-size: 32px
+    span
+        font-size: 76px 
+        transition: 200ms ease-in
+    h5
+        color: #999999
+    button
+        color: #999999
+        transition: 200ms ease-in
+        border: 2px solid rgba(255, 213, 0, 0.20)
+        &:hover
+            color: #fff
+            border: 2px solid $primaryColor
+            box-shadow: 0 10px 20px rgba(255, 213, 0, 0.20)
+    &:hover
+        border: 2px solid $primaryColor
+        .secondary-color
+            color: $primaryColor
+
+@media (max-width: 768px)
+    .pricing-card
+        border: 2px solid $primaryColor
+        button
+            color: #fff
+            border: 2px solid $primaryColor
+            box-shadow: 0 10px 20px rgba(255, 213, 0, 0.20)
+        .secondary-color
+            color: $primaryColor
+
+/* -------------- */
 
 /* Login/Register */
 

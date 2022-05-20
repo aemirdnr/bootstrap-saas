@@ -46,9 +46,8 @@ a {
   background-color: #101010;
   position: -webkit-sticky;
   position: sticky;
+  z-index: 100;
   top: 0;
-  -webkit-box-shadow: 0 0px 20px #ffc918;
-          box-shadow: 0 0px 20px #ffc918;
 }
 
 .logo {
@@ -396,6 +395,80 @@ a {
 }
 
 /* ---------- - */
+/* Prices Section */
+.headline {
+  font-family: "Kalam Bold";
+  text-shadow: 2px 2px 6px #ffc918;
+}
+
+.headline strong {
+  color: #ffc918;
+}
+
+.pricing-card {
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 0 10px 20px rgba(255, 213, 0, 0.2);
+          box-shadow: 0 10px 20px rgba(255, 213, 0, 0.2);
+  border: 2px solid rgba(255, 213, 0, 0.2);
+  -webkit-transition: 200ms ease-in;
+  transition: 200ms ease-in;
+  font-family: "Gothic A1 Bold";
+}
+
+.pricing-card .secondary-color {
+  color: #d3a715;
+  font-family: "Gothic A1 Medium";
+  font-size: 32px;
+}
+
+.pricing-card span {
+  font-size: 76px;
+  -webkit-transition: 200ms ease-in;
+  transition: 200ms ease-in;
+}
+
+.pricing-card h5 {
+  color: #999999;
+}
+
+.pricing-card button {
+  color: #999999;
+  -webkit-transition: 200ms ease-in;
+  transition: 200ms ease-in;
+  border: 2px solid rgba(255, 213, 0, 0.2);
+}
+
+.pricing-card button:hover {
+  color: #fff;
+  border: 2px solid #ffc918;
+  -webkit-box-shadow: 0 10px 20px rgba(255, 213, 0, 0.2);
+          box-shadow: 0 10px 20px rgba(255, 213, 0, 0.2);
+}
+
+.pricing-card:hover {
+  border: 2px solid #ffc918;
+}
+
+.pricing-card:hover .secondary-color {
+  color: #ffc918;
+}
+
+@media (max-width: 768px) {
+  .pricing-card {
+    border: 2px solid #ffc918;
+  }
+  .pricing-card button {
+    color: #fff;
+    border: 2px solid #ffc918;
+    -webkit-box-shadow: 0 10px 20px rgba(255, 213, 0, 0.2);
+            box-shadow: 0 10px 20px rgba(255, 213, 0, 0.2);
+  }
+  .pricing-card .secondary-color {
+    color: #ffc918;
+  }
+}
+
+/* -------------- */
 /* Login/Register */
 .modal {
   background-color: #101010;
