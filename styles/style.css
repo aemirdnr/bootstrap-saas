@@ -521,6 +521,28 @@ a {
 }
 
 /* ----------- */
+/* Footer Section */
+footer .footer-link {
+  color: #8d8d8d;
+  font-family: 'Gothic A1 Medium';
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+}
+
+footer .footer-link:hover {
+  color: #BEBEBE;
+}
+
+footer p {
+  color: #8d8d8d;
+  font-family: 'Gothic A1 Medium';
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+}
+
+/* -------------- */
 /* Login/Register */
 .modal {
   background-color: #101010;
