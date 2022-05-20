@@ -491,6 +491,9 @@ a {
           user-select: none;
   color: #FFF;
   margin: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .faq-header .faq-headline i {
