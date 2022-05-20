@@ -398,7 +398,7 @@ a {
 /* Prices Section */
 .headline {
   font-family: "Kalam Bold";
-  text-shadow: 2px 2px 6px #ffc918;
+  text-shadow: 1px 1px 4px #ffc918;
 }
 
 .headline strong {
@@ -469,6 +469,55 @@ a {
 }
 
 /* -------------- */
+/* FAQ Section */
+.faq-content {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.faq-header {
+  cursor: pointer;
+  border-bottom: 2px solid #ffc918;
+  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+}
+
+.faq-header .faq-headline {
+  font-family: "Gothic A1 Medium";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #FFF;
+  margin: 0;
+}
+
+.faq-header .faq-headline i {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.active {
+  color: #ffc918 !important;
+}
+
+.faq-body {
+  text-align: left;
+  line-height: 22px;
+  border: 2px solid #ffc918;
+  border-top: 0px;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+
+.faq-body .faq-text {
+  font-family: "Gothic A1 Light";
+  margin: 0;
+}
+
+/* ----------- */
 /* Login/Register */
 .modal {
   background-color: #101010;
